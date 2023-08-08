@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+* {
+  font-family: "poppins", sans-serif;
+  text-decoration: none !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image{
+  height: 100px;
+  width: 100px;
+  margin-left: 60px;
+  margin-top: 70px;
 }
+.profile-pic{
+  height: 100px;
+  width: 150px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
+.container-login {
+  width: 100%;
   min-height: 100vh;
+  background-image: url(./Asset/wave-haikei.svg);
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 90%;
+  background: #fff;
+  padding: 50px 60px 70px;
+}
+
+form {
+  width: 100%;
+}
+
+.form-box h6 {
+  font-size: 20px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+input {
+  background: transparent;
+  padding: 10px 10px;
+  border: 1px solid grey;
+}
+.form-box .btn {
+  background-color: #efbd00;
+  width: 80%;
+  cursor: pointer;
+  color: white;
+  transition: 1s;
+  margin-top: 40px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field label {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebar {
+  width: calc(100% - 300px);
+}
+.love {
+  background-color: rgba(232, 210, 87, 0.125);
+}
+.tab {
+  padding: 40px;
+} 
+.tab th{
+  background-color: #f4e6bf;
+  border-bottom: 4px solid orange !important;
+}
+.tab th,td{
+  text-align: left;
+  padding: 8px;
+}
+.tab-2{
+  background-color: #fff;
+  
+}
+.profile-btn{
+  background-color: #efbd00;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  padding: 6px 60px;
+  right: 90px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-box {
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+  form {
+    width: 100%;
   }
 }
+
